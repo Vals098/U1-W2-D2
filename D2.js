@@ -25,7 +25,9 @@ if (firstNumber < secondNumber) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 const x = 4
 
-if (x !== 5) console.log("risposta esercizio 2:", "not equal")
+if (x !== 5) {
+  console.log("risposta esercizio 2:", "not equal")
+}
 //if const x = 5 // console.log doesn't paste anything
 
 /* ESERCIZIO 3
@@ -35,7 +37,9 @@ if (x !== 5) console.log("risposta esercizio 2:", "not equal")
 /* SCRIVI QUI LA TUA RISPOSTA */
 const y = 75
 
-if (y % 5 === 0) console.log("risposta esercizio 3:", "divisibile per 5")
+if (y % 5 === 0) {
+  console.log("risposta esercizio 3:", "divisibile per 5")
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -113,7 +117,23 @@ const a = 2
 const b = 29
 const c = 17
 
-if (a > b && a > c) {
+if (a > b && a > c && b > c) {
+  console.log("risposta esercizio 7:", a, ">", b, ">", c)
+}
+if (c > b && c > a && b > a) {
+  console.log("risposta esercizio 7:", c, ">", b, ">", a)
+}
+if (b > a && b > c && c > a) {
+  console.log("risposta esercizio 7:", b, ">", c, ">", a)
+}
+if (a > b && a > c && c > b) {
+  console.log("risposta esercizio 7:", a, ">", c, ">", b)
+}
+if (b > a && b > c && a > c) {
+  console.log("risposta esercizio 7:", b, ">", a, ">", c)
+}
+if (c > b && c > a && a > b) {
+  console.log("risposta esercizio 7:", c, ">", a, ">", b)
 }
 
 /* ESERCIZIO 8
